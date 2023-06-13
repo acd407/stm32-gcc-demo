@@ -4,7 +4,7 @@ Key::Key (GPIO_TypeDef *_GPIOx, uint16_t Pin, GPIOSpeed_TypeDef Speed,
           GPIOMode_TypeDef Mode)
     : GPIOx (_GPIOx) {
     GPIO_Structure = {Pin, Speed, Mode};
-    RCC_APB2PeriphClockCmd (1 << ((uint32_t (GPIOx) - APB2PERIPH_BASE) / 400),
+    RCC_APB2PeriphClockCmd (1 << ((uint32_t (GPIOx) - APB2PERIPH_BASE) / 0x400),
                             ENABLE);
     
     GPIO_Init (GPIOx, &GPIO_Structure);
