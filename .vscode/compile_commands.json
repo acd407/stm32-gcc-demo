@@ -2,661 +2,751 @@
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/core_cm3.o",
-      "sys/src/core_cm3.c"
+      "src/buzzer.c.o",
+      "src/buzzer.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/core_cm3.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/core_cm3.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/buzzer.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/buzzer.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/system_stm32f10x.o",
-      "sys/src/system_stm32f10x.c"
+      "src/delay.c.o",
+      "src/delay.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/system_stm32f10x.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/system_stm32f10x.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/delay.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/delay.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/arm-none-eabi-g++",
+      "-nostdinc++",
+      "-mcpu=cortex-m3",
+      "-mthumb",
+      "-std=c++17",
+      "-Wall",
+      "-Werror",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fno-exceptions",
+      "-c",
+      "-o",
+      "src/key.cpp.o",
+      "src/key.cpp"
+    ],
+    "directory": "/mnt/f/Desktop/stm32-gcc-demo",
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/key.cpp",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/key.cpp.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/misc.o",
-      "sys/src/std/misc.c"
+      "src/led.c.o",
+      "src/led.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/misc.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/misc.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/led.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/led.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_adc.o",
-      "sys/src/std/stm32f10x_adc.c"
+      "src/lightsensor.c.o",
+      "src/lightsensor.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_adc.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_adc.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/lightsensor.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/lightsensor.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_bkp.o",
-      "sys/src/std/stm32f10x_bkp.c"
+      "src/OLED.c.o",
+      "src/OLED.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_bkp.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_bkp.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/OLED.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/OLED.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/sbin/arm-none-eabi-g++",
+      "-nostdinc++",
+      "-mcpu=cortex-m3",
+      "-mthumb",
+      "-std=c++17",
+      "-Wall",
+      "-Werror",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-fno-exceptions",
+      "-c",
+      "-o",
+      "src/main.cpp.o",
+      "src/main.cpp"
+    ],
+    "directory": "/mnt/f/Desktop/stm32-gcc-demo",
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/main.cpp",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/main.cpp.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_can.o",
-      "sys/src/std/stm32f10x_can.c"
+      "src/stm32f10x_it.c.o",
+      "src/stm32f10x_it.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_can.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_can.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/stm32f10x_it.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/stm32f10x_it.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_cec.o",
-      "sys/src/std/stm32f10x_cec.c"
+      "src/sys/core_cm3.c.o",
+      "src/sys/core_cm3.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_cec.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_cec.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/core_cm3.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/core_cm3.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_crc.o",
-      "sys/src/std/stm32f10x_crc.c"
+      "src/sys/startup_stm32f10x_md.s.o",
+      "src/sys/startup_stm32f10x_md.s"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_crc.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_crc.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/startup_stm32f10x_md.s",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/startup_stm32f10x_md.s.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_dac.o",
-      "sys/src/std/stm32f10x_dac.c"
+      "src/sys/system_stm32f10x.c.o",
+      "src/sys/system_stm32f10x.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_dac.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_dac.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/system_stm32f10x.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/system_stm32f10x.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_dbgmcu.o",
-      "sys/src/std/stm32f10x_dbgmcu.c"
+      "src/sys/std/misc.c.o",
+      "src/sys/std/misc.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_dbgmcu.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_dbgmcu.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/misc.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/misc.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_dma.o",
-      "sys/src/std/stm32f10x_dma.c"
+      "src/sys/std/stm32f10x_adc.c.o",
+      "src/sys/std/stm32f10x_adc.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_dma.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_dma.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_adc.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_adc.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_exti.o",
-      "sys/src/std/stm32f10x_exti.c"
+      "src/sys/std/stm32f10x_bkp.c.o",
+      "src/sys/std/stm32f10x_bkp.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_exti.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_exti.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_bkp.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_bkp.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_fsmc.o",
-      "sys/src/std/stm32f10x_fsmc.c"
+      "src/sys/std/stm32f10x_cec.c.o",
+      "src/sys/std/stm32f10x_cec.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_fsmc.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_fsmc.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_cec.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_cec.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_flash.o",
-      "sys/src/std/stm32f10x_flash.c"
+      "src/sys/std/stm32f10x_can.c.o",
+      "src/sys/std/stm32f10x_can.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_flash.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_flash.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_can.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_can.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_gpio.o",
-      "sys/src/std/stm32f10x_gpio.c"
+      "src/sys/std/stm32f10x_crc.c.o",
+      "src/sys/std/stm32f10x_crc.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_gpio.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_gpio.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_crc.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_crc.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_i2c.o",
-      "sys/src/std/stm32f10x_i2c.c"
+      "src/sys/std/stm32f10x_dac.c.o",
+      "src/sys/std/stm32f10x_dac.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_i2c.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_i2c.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_dac.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_dac.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_iwdg.o",
-      "sys/src/std/stm32f10x_iwdg.c"
+      "src/sys/std/stm32f10x_dbgmcu.c.o",
+      "src/sys/std/stm32f10x_dbgmcu.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_iwdg.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_iwdg.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_dbgmcu.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_dbgmcu.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_pwr.o",
-      "sys/src/std/stm32f10x_pwr.c"
+      "src/sys/std/stm32f10x_dma.c.o",
+      "src/sys/std/stm32f10x_dma.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_pwr.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_pwr.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_dma.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_dma.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_rcc.o",
-      "sys/src/std/stm32f10x_rcc.c"
+      "src/sys/std/stm32f10x_exti.c.o",
+      "src/sys/std/stm32f10x_exti.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_rcc.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_rcc.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_exti.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_exti.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_rtc.o",
-      "sys/src/std/stm32f10x_rtc.c"
+      "src/sys/std/stm32f10x_flash.c.o",
+      "src/sys/std/stm32f10x_flash.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_rtc.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_rtc.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_flash.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_flash.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_spi.o",
-      "sys/src/std/stm32f10x_spi.c"
+      "src/sys/std/stm32f10x_fsmc.c.o",
+      "src/sys/std/stm32f10x_fsmc.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_spi.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_spi.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_fsmc.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_fsmc.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_tim.o",
-      "sys/src/std/stm32f10x_tim.c"
+      "src/sys/std/stm32f10x_gpio.c.o",
+      "src/sys/std/stm32f10x_gpio.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_tim.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_tim.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_gpio.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_gpio.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_sdio.o",
-      "sys/src/std/stm32f10x_sdio.c"
+      "src/sys/std/stm32f10x_i2c.c.o",
+      "src/sys/std/stm32f10x_i2c.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_sdio.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_sdio.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_i2c.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_i2c.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_usart.o",
-      "sys/src/std/stm32f10x_usart.c"
+      "src/sys/std/stm32f10x_iwdg.c.o",
+      "src/sys/std/stm32f10x_iwdg.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_usart.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_usart.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_iwdg.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_iwdg.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/src/std/stm32f10x_wwdg.o",
-      "sys/src/std/stm32f10x_wwdg.c"
+      "src/sys/std/stm32f10x_pwr.c.o",
+      "src/sys/std/stm32f10x_pwr.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_wwdg.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/src/std/stm32f10x_wwdg.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_pwr.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_pwr.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "sys/startup/startup_stm32f10x_md.o",
-      "sys/startup/startup_stm32f10x_md.s"
+      "src/sys/std/stm32f10x_rcc.c.o",
+      "src/sys/std/stm32f10x_rcc.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/sys/startup/startup_stm32f10x_md.s",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/sys/startup/startup_stm32f10x_md.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_rcc.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_rcc.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "user/src/buzzer.o",
-      "user/src/buzzer.c"
+      "src/sys/std/stm32f10x_rtc.c.o",
+      "src/sys/std/stm32f10x_rtc.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/user/src/buzzer.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/user/src/buzzer.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_rtc.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_rtc.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "user/src/delay.o",
-      "user/src/delay.c"
+      "src/sys/std/stm32f10x_sdio.c.o",
+      "src/sys/std/stm32f10x_sdio.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/user/src/delay.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/user/src/delay.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_sdio.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_sdio.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "user/src/key.o",
-      "user/src/key.c"
+      "src/sys/std/stm32f10x_spi.c.o",
+      "src/sys/std/stm32f10x_spi.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/user/src/key.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/user/src/key.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_spi.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_spi.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "user/src/led.o",
-      "user/src/led.c"
+      "src/sys/std/stm32f10x_tim.c.o",
+      "src/sys/std/stm32f10x_tim.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/user/src/led.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/user/src/led.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_tim.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_tim.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "user/src/lightsensor.o",
-      "user/src/lightsensor.c"
+      "src/sys/std/stm32f10x_usart.c.o",
+      "src/sys/std/stm32f10x_usart.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/user/src/lightsensor.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/user/src/lightsensor.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_usart.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_usart.c.o"
   },
   {
     "arguments": [
       "/usr/sbin/arm-none-eabi-gcc",
+      "-nostdinc",
       "-mcpu=cortex-m3",
       "-mthumb",
-      "-std=c99",
+      "-std=c11",
       "-Wall",
       "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
+      "-Iinclude",
+      "-Iinclude/std",
+      "-ffunction-sections",
+      "-fdata-sections",
       "-c",
       "-o",
-      "user/src/main.o",
-      "user/src/main.c"
+      "src/sys/std/stm32f10x_wwdg.c.o",
+      "src/sys/std/stm32f10x_wwdg.c"
     ],
     "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/user/src/main.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/user/src/main.o"
-  },
-  {
-    "arguments": [
-      "/usr/sbin/arm-none-eabi-gcc",
-      "-mcpu=cortex-m3",
-      "-mthumb",
-      "-std=c99",
-      "-Wall",
-      "-Werror",
-      "-Isys/include",
-      "-Isys/include/std",
-      "-Iuser/include",
-      "-c",
-      "-o",
-      "user/src/stm32f10x_it.o",
-      "user/src/stm32f10x_it.c"
-    ],
-    "directory": "/mnt/f/Desktop/stm32-gcc-demo",
-    "file": "/mnt/f/Desktop/stm32-gcc-demo/user/src/stm32f10x_it.c",
-    "output": "/mnt/f/Desktop/stm32-gcc-demo/user/src/stm32f10x_it.o"
+    "file": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_wwdg.c",
+    "output": "/mnt/f/Desktop/stm32-gcc-demo/src/sys/std/stm32f10x_wwdg.c.o"
   }
 ]

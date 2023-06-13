@@ -1,24 +1,28 @@
 # 编译器设置
 CC = arm-none-eabi-gcc
+CXX = arm-none-eabi-g++
 OC = arm-none-eabi-objcopy
-CFLAGS = -mcpu=cortex-m3 -mthumb -std=c99 -Wall -Werror $(addprefix -I, $(INC))
-LDFLAGS = -Tstm32_flash.ld -nostdlib -s
+CFLAGS = -mcpu=cortex-m3 -mthumb -std=c11 -Wall -Werror $(addprefix -I, $(INC)) -ffunction-sections -fdata-sections
+CXXFLAGS = -mcpu=cortex-m3 -mthumb -std=c++17 -Wall -Werror $(addprefix -I, $(INC)) -ffunction-sections -fdata-sections -fno-exceptions
+LDFLAGS = -Tstm32_flash.ld -nostdlib -s -Wl,--gc-sections
 TARGET = main # 输出文件名
 
 # 包含目录
-INC = sys/include sys/include/std user/include
+INC = include include/std
 
-SYS_SRCS = $(wildcard sys/src/*.c) $(wildcard sys/src/std/*.c) # 系统源文件
-STARTUP_ASMS = sys/startup/startup_stm32f10x_md.s # 启动汇编
-USER_SRCS = $(wildcard user/src/*.c) # 用户源文件
+# 源文件
+FILES = $(wildcard src/*) $(wildcard src/sys/*) $(wildcard src/sys/std/*) 
+SRCS = $(filter %.c %.cpp %.s,$(FILES))
 
 # 目标文件
-OBJS = $(SYS_SRCS:.c=.o) $(STARTUP_ASMS:.s=.o) $(USER_SRCS:.c=.o)
+OBJS = $(addsuffix .o,$(SRCS))
 
 # 生成目标文件
-%.o: %.c
+%.c.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
-%.o: %.s
+%.cpp.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+%.s.o: %.s
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # 主目标
