@@ -2,10 +2,20 @@
 CC = arm-none-eabi-gcc
 CXX = arm-none-eabi-g++
 OC = arm-none-eabi-objcopy
-CFLAGS = -mcpu=cortex-m3 -mthumb -std=c11 -Wall -Werror $(addprefix -I, $(INC)) -ffunction-sections -fdata-sections
-CXXFLAGS = -mcpu=cortex-m3 -mthumb -std=c++17 -Wall -Werror $(addprefix -I, $(INC)) -ffunction-sections -fdata-sections -fno-exceptions
-LDFLAGS = -Tstm32_flash.ld -nostdlib -s -Wl,--gc-sections
+CFLAGS = -mcpu=cortex-m3 -mthumb -std=c11 -Wall -Werror $(addprefix -I, $(INC))
+CXXFLAGS = -mcpu=cortex-m3 -mthumb -std=c++17 -Wall -Werror $(addprefix -I, $(INC)) -fno-exceptions
+LDFLAGS = -Tstm32_flash.ld -nostdlib 
 TARGET = main # 输出文件名
+
+ver = debug
+ifeq ($(ver), debug)
+	CFLAGS += -g -Ddebug
+	CXXFLAGS += -g -Ddebug
+else
+	CFLAGS += -ffunction-sections -fdata-sections
+	CXXFLAGS += -ffunction-sections -fdata-sections
+	LDFLAGS += -Wl,--gc-sections
+endif
 
 # 包含目录
 INC = include include/std
