@@ -1,13 +1,11 @@
-#include "key.hpp"
+#include "Key.hpp"
 extern "C" {
 #include "OLED.h"
-#include "stdbool.h"
 #include "stm32f10x.h"
-#include "stm32f10x_gpio.h"
-#include <stdint.h>
 }
 
-char *str[] = {(char *) "pressed! ", (char *) "released!"};
+char *str[] {const_cast<char *> ("pressed! "),
+             const_cast<char *> ("released!")};
 
 bool status;
 void OLED_turn() {
@@ -18,8 +16,7 @@ void OLED_turn() {
     OLED_ShowString (1, 1, str[! status]);
     OLED_ShowNum (2, 1, count, 5);
 }
-extern "C" int main();
-int main() {
+extern "C" int main() {
     Key key {GPIOA, GPIO_Pin_15, GPIO_Speed_50MHz, GPIO_Mode_IPU};
     OLED_Init();
     status = key.read();

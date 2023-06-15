@@ -1,7 +1,6 @@
+#include "Delay.hpp"
 extern "C" {
-#include "delay.h"
 #include "stm32f10x.h"
-#include <stdint.h>
 }
 class Key {
     GPIO_TypeDef *GPIOx;

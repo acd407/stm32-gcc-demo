@@ -1,4 +1,4 @@
-#include "stm32f10x.h"
+#include "LightSensor.h"
 
 void LightSensor_Init () {
     RCC_APB2PeriphClockCmd (RCC_APB2Periph_GPIOB, ENABLE);

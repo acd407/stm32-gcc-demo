@@ -1,4 +1,4 @@
-#include "key.hpp"
+#include "Key.hpp"
 
 Key::Key (GPIO_TypeDef *_GPIOx, uint16_t Pin, GPIOSpeed_TypeDef Speed,
           GPIOMode_TypeDef Mode)
@@ -15,7 +15,7 @@ Key::~Key() {
 }
 uint8_t Key::read() {
     if (GPIO_ReadInputDataBit (GPIOx, GPIO_Structure.GPIO_Pin) == 1) {
-        Delay_ms (20);
+        Delay::ms (20);
         if (GPIO_ReadInputDataBit (GPIOx, GPIO_Structure.GPIO_Pin) == 1)
             return 1;
     }
