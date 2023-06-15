@@ -4,24 +4,24 @@ CXX = arm-none-eabi-g++
 OC = arm-none-eabi-objcopy
 CFLAGS = -mcpu=cortex-m3 -mthumb -std=c11 -Wall -Werror $(addprefix -I, $(INC))
 CXXFLAGS = -mcpu=cortex-m3 -mthumb -std=c++17 -Wall -Werror $(addprefix -I, $(INC)) -fno-exceptions
-LDFLAGS = -Tstm32_flash.ld -nostdlib 
+LDFLAGS = -Tstm32_flash.ld -nostdlib
 TARGET = main # 输出文件名
 
-ver = debug
-ifeq ($(ver), debug)
-	CFLAGS += -g -Ddebug
-	CXXFLAGS += -g -Ddebug
+# debug = 1
+ifeq ($(debug), 1)
+	CFLAGS += -Og -Ddebug
+	CXXFLAGS += -Og -Ddebug
 else
-	CFLAGS += -ffunction-sections -fdata-sections
-	CXXFLAGS += -ffunction-sections -fdata-sections
-	LDFLAGS += -Wl,--gc-sections
+	CFLAGS += -ffunction-sections -fdata-sections -O2
+	CXXFLAGS += -ffunction-sections -fdata-sections -O2
+	LDFLAGS += -Wl,--gc-sections -s
 endif
 
 # 包含目录
 INC = include include/std
 
 # 源文件
-FILES = $(wildcard src/*) $(wildcard src/sys/*) $(wildcard src/sys/std/*) 
+FILES = $(wildcard src/*) $(wildcard src/sys/*) $(wildcard src/sys/std/*)
 SRCS = $(filter %.c %.cpp %.s,$(FILES))
 
 # 目标文件
