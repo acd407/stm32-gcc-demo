@@ -4,7 +4,7 @@ CXX = arm-none-eabi-g++
 OC = arm-none-eabi-objcopy
 CFLAGS = -mcpu=cortex-m3 -mthumb -std=c11 -Wall -Werror $(addprefix -I, $(INC))
 CXXFLAGS = -mcpu=cortex-m3 -mthumb -std=c++17 -Wall -Werror $(addprefix -I, $(INC)) -fno-exceptions
-LDFLAGS = -Tstm32_flash.ld -nostdlib
+LDFLAGS = -Tstm32_flash.ld -nostdlib -lstdc++
 TARGET = main # 输出文件名
 
 # debug = 1
@@ -18,7 +18,8 @@ else
 endif
 
 # 包含目录
-INC = include include/std
+INC += include include/std 
+LIB += /usr/arm-none-eabi/lib
 
 # 源文件
 FILES = $(wildcard src/*) $(wildcard src/sys/*) $(wildcard src/sys/std/*)
